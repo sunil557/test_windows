@@ -5,7 +5,7 @@
       debug:
         msg: "Hello World!"
 
-    - name: Create a directory for placing weblogic package
+    - name: Create a directory
       win_file:
         path: "C:\test"
         state: directory
