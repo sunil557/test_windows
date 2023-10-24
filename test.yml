@@ -4,7 +4,11 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-        
+
+    - name: Debug Script
+      debug:
+        var: ansible_facts['discovered_interpreter_python']
+
     - name: start httpd
       ansible.builtin.service:
         name: httpd
