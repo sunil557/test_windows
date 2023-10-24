@@ -5,6 +5,9 @@
       debug:
         msg: "Hello World!"
 
+    - name: Perform WinRM ping to test WinRM connection
+      win_ping:
+
     - name: Debug Script
       debug:
         var: ansible_facts['discovered_interpreter_python']
