@@ -1,0 +1,11 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+        
+    - name: start httpd
+      ansible.builtin.service:
+        name: httpd
+        state: started
