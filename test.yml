@@ -5,8 +5,8 @@
       debug:
         msg: "Hello World!"
 
-    - name: Perform WinRM ping to test WinRM connection
-      win_ping:
+    # - name: Perform WinRM ping to test WinRM connection
+    #   win_ping:
 
     # - name: Debug Script
     #   debug:
