@@ -8,11 +8,11 @@
     - name: Perform WinRM ping to test WinRM connection
       win_ping:
 
-    - name: Debug Script
-      debug:
-        var: ansible_facts['discovered_interpreter_python']
+    # - name: Debug Script
+    #   debug:
+    #     var: ansible_facts['discovered_interpreter_python']
 
-    - name: start httpd
-      ansible.builtin.service:
-        name: httpd
-        state: started
+    # - name: start httpd
+    #   ansible.builtin.service:
+    #     name: httpd
+    #     state: started
